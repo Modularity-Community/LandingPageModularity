@@ -5,105 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modularity</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="m-5">
-    <!-- navbar -->
-    <nav class="flex justify-between fixed top-0 left-0 right-0 mb-96 bg-slate-100 z-10">
-        <!-- title nav -->
-        <div class="title flex w-1/2 m-3" > 
-            <div class="w-[48px] h-[48px] bg-slate-400 rounded-full"></div>
-            <h1 class="text-2xl pl-2.5 text-center mt-1">Modularity</h1>
-        </div>
-            <!-- list nav -->
-        <div class="flex  text-center w-full justify-end m-3" >
-            <div class="flex text-lg mt-2" >
-                <div class="mr-[60px] px-4 "><a href="#">Home</a></div>
-                <div class="mr-[60px] px-4 "><a href="#about">About Us </a></div>
-                <div class="mr-[60px] px-4 "><a href="#">Work</a></div>
-                <div class="mr-[60px] px-4 "><a href="#">Blog</a></div>
+<body>
+    <!-- header -->
+    <nav class="bg-purple-600 p-3 fixed top-0 right-0 left-0 text-white">
+        <div class="flex ">
+            <!-- BRAND -->
+            <div class="flex w-1/2 flex-1">
+                <div class="w-6 h-6 lg:h-12 lg:w-12 bg-slate-500 rounded-full mr-3 font-bold"></div>
+                <h3 class="lg:text-2xl  lg:mt-2">Modularity</h3>
             </div>
-            <div>
-                <button class="bg-slate-500 mt-1 px-4 py-2 text-white block rounded-lg">Button</button>
-            </div>
-         </div>
-    </nav>
-    <!-- main page -->
-    <div class="relative top-14 m-6">
-
-        <!-- Section 1 -->
-        <div class="container mx-auto my-10 flex justify-between">
-            <div class="w-1/2">
-                <h1 class="text-4xl mb-5 ">Neque porro quisquam </h1>
-                <p class="text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia optio maiores dolore ratione ad aut. Nisi laudantium quisquam dolor architecto repudiandae beatae unde repellendus quidem, corrupti libero eligendi enim perspiciatis adipisci officia velit vel ex eveniet, doloremque deserunt iste tenetur? Excepturi aliquid earum quia. Magni similique non accusantium optio.</p>
-                <button class="bg-slate-500 mt-5 px-4 py-2 text-white block rounded-lg ">Button</button>
-            </div>
-            <!-- hero banner -->
-            <div class="w-1/2 mx-5 flex justify-end">
-                <img src="../asset/hero.jpg" alt="eimi">
+            <div class=" flex w-1/2 justify-end ">
+                <!-- humberger menu -->
+                <div class="flex gap-3 justify-end">
+                    <h3 class="lg:hidden hover:text-purple-400 hover:cursor-pointer">Join Us</h3>
+                    <div class="menu-toggle lg:hidden flex flex-col justify-evenly relative z-30">
+                        <input type="checkbox" class="absolute h-[20px] w-[28px] z-20 opacity-0">
+                        <span class="block bg-white w-[20px] h-[3px] rounded-sm"></span>
+                        <span class="block bg-white w-[20px] h-[3px] rounded-sm"></span>
+                        <span class="block bg-white w-[20px] h-[3px] rounded-sm"></span>
+                    </div>
                 </div>
-        </div>
-        <!-- section 2 - about -->
-        <div id="about" class="container mx-auto my-28">
-            <!-- content text -->
-            <div class="text-center">
-                <h1 class="text-4xl mb-5">What Is Modularity?</h1>
-                <p class="text-[20px]">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, 
-                    adipisci velit...</p>
-            </div>
-            <!-- content image -->
-            <div class="flex justify-between mt-10">
-                <img src="../asset/sora1.jpg" class="border-2 border-black" alt="">
-                <img src="../asset/sora1.jpg" class=" border-2 border-black" alt="">
+                <ul class="bg-purple-600 w-1/2 flex absolute flex-col right-0 top-0 justify-evenly h-screen translate-x-full transition-all duration-[1s] opacity-0 text-center lg:h-0 lg:opacity-100 lg:static lg:flex-row lg:mt-2  cursor-pointer text-lg lg:gap-16 lg:translate-x-0 lg:transition-none lg:w-full lg:justify-end">
+                    <li class="hover:text-slate-200">Home</li>
+                    <li class="hover:text-slate-200">About Us</li>
+                    <li class="hover:text-slate-200">Work</li>
+                    <li class="hover:text-slate-200">Blog</li>
+                    <button class="bg-[#5a189a]  hidden lg:-mt-1 rounded-lg w-20 lg:inline-block h-10 text-center uppercase font-bold">Join</button>
+                </ul>
             </div>
         </div>
-        <!-- visi -->
-        <div class="container flex justify-between my-28">
-            <div class="w-1/2">
-                <img src="../asset/misi.png" alt="">
-            </div>
-            <!-- content -->
-            <div class="w-1/2 my-auto">
-                <h1 class=" font-bold text-4xl mb-6 ">VISI</h1>
-                <p class="text-[20px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, qui dolores voluptatum sapiente non laborum veniam quisquam deserunt modi aut cumque eius cupiditate ut reprehenderit iusto odit aperiam at soluta autem reiciendis doloremque maiores iure accusantium. Voluptas itaque dolores saepe, mollitia hic dolorum beatae! Reiciendis, dignissimos. Itaque eveniet fugiat inventore!</p>
-            </div>
-        </div>
-        <!-- misi -->
-        <div class="container flex justify-between my-28">
-            <div class="w-1/2 my-auto">
-                <h1 class=" font-bold text-4xl mb-6 ">MISI</h1>
-                <p class="text-[20px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, qui dolores voluptatum sapiente non laborum veniam quisquam deserunt modi aut cumque eius cupiditate ut reprehenderit iusto odit aperiam at soluta autem reiciendis doloremque maiores iure accusantium. Voluptas itaque dolores saepe, mollitia hic dolorum beatae! Reiciendis, dignissimos. Itaque eveniet fugiat inventore!</p>
-            </div>
-            <!-- img -->
-            <div class="w-1/2">
-                <img src="../asset/misi.png" alt="">
+    </nav>
+    <!-- body -->
+    <div class="container mt-20 lg:my-32 mx-auto  ">
+        <!--Section 1  -->
+        <div class="mx-3 lg:flex lg:justify-between lg:gap-5 ">
+            <img class=" shadow-2xl rounded-md lg:order-last  lg:w-1/2 lg:h-[394px] lg:object-cover" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            <div class="mt-3 lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-4">
+                <h1 class=" lg:text-4xl  text-2xl font-bold ">Modularity</h1>
+                <p class="lg:text-2xl">est qui dolorem ipsum quia dolor sit amet,  consectetur, adipisci velit... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, molestias!</p>
+                <button class=" mt-2 w-full bg-purple-600 text-white rounded-lg h-10  lg:w-24 lg:text-xl uppercase font-bold">Join</button>
             </div>
         </div>
-        <!-- Feature -->
-        <div class="container">
-            <div class="text-center">
-                <h1 class="text-4xl mb-5">Features</h1>
-                <p class="text-[20px]">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, 
-                    adipisci velit...</p>
+        <!-- sectiion 2 -->
+        <div class="mx-3 my-10">
+            <div class="text-center mb-3">
+                <h1 class="font-bold text-2xl  lg:text-4xl mb-2">What Is Modularity</h1>
+                <p class="lg:text-2xl">est qui dolorem ipsum quia dolor sit amet,  
+                    consectetur, adipisci velit...</p>
             </div>
-            <!-- item -->
-            <div class="flex justify-evenly my-10">
-                <span class="block w-52 h-52 bg-slate-500"></span>
-                <span class="block w-52 h-52 bg-slate-500"></span>
-                <span class="block w-52 h-52 bg-slate-500"></span>
-                <span class="block w-52 h-52 bg-slate-500"></span>
+            <div class="flex flex-col gap-3 lg:flex-row lg:justify-between">
+                <img class="shadow-2xl rounded-md lg:flex-1" src="https://media.istockphoto.com/photos/-picture-id833286694?k=20&m=833286694&s=612x612&w=0&h=8Iz8p5XzyUJ69t5yhQnlWZBfFZo1tXX_TisctokRajc=" alt="">
+
+                <img class="shadow-2xl rounded-md lg:flex-1" src="https://media.istockphoto.com/photos/-picture-id833286694?k=20&m=833286694&s=612x612&w=0&h=8Iz8p5XzyUJ69t5yhQnlWZBfFZo1tXX_TisctokRajc=" alt="">
             </div>
         </div>
-        <!-- what the say -->
-        <div class="container flex my-20">
-            <div class="w-1/2 my-auto text-center">
-                <h1 class=" font-bold text-5xl mb-6 ">What they say?</h1>
+        <!-- section visi -->
+        <div class="mx-3 my-10 lg:flex lg:gap-16 justify-between">
+            <div class="lg:order-last text-center  mb-3 lg:text-start lg:w-[46%] lg:my-auto ">
+                <h1 class="font-bold text-2xl lg:text-4xl mb-2">Visi</h1>
+                <p class="lg:text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque architecto accusantium voluptatum recusandae ducimus nulla dolores vel officia facere porro velit odio sint earum quia eveniet autem veritatis temporibus, harum possimus? Qui, ex! Quasi, amet reiciendis fugiat, repellat quibusdam dignissimos dolorem rem quos facilis repudiandae at maxime fuga, non consequatur.</p>
             </div>
-            <div class="w-1/2">
-                <img src="../asset/misi.png" alt="">
+        
+                <img class="shadow-2xl rounded-md object-center object-cover lg:flex-1"" src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+
+        </div>
+        <!-- section misi -->
+        <div class="mx-3 my-10 lg:flex lg:gap-16  justify-between">
+            <div class="text-center mb-3 lg:text-start lg:w-[46%] lg:my-auto">
+                <h1 class="font-bold text-2xl lg:text-4xl mb-2">Misi</h1>
+                <p class="lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere odio fuga nisi nulla ipsa ab officiis, eligendi quas et dolorem laudantium, quos rerum ipsam nemo! Laboriosam veniam dolorum possimus odio, dolores natus amet ut. Debitis inventore iusto facilis incidunt unde voluptate odit, commodi, modi perspiciatis, nihil accusamus molestias earum!</p>
+            </div>
+                <img class=" shadow-2xl rounded-md lg:flex-1" src="https://images.unsplash.com/photo-1490135900376-2e86d918a23b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+
+        <!-- feature -->
+        <div class="mx-3 my-10">
+            <div class="text-center mb-3">
+                <h1 class="font-bold text-2xl mb-2 lg:text-4xl">Feature</h1>
+                <p class="lg:text-2xl">est qui dolorem ipsum quia dolor sit amet,  
+                    consectetur, adipisci velit...</p>
+            </div>
+            <div class="flex flex-wrap gap-3 justify-center ">
+                    <img class="shadow-2xl rounded-md w-[160px] h-[124px] lg:w-[300px] lg:h-[300px] object-cover"src="https://images.unsplash.com/21/mac-glasses.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img class="shadow-2xl rounded-md w-[160px] h-[124px] lg:w-[300px] lg:h-[300px] object-cover"src="https://images.unsplash.com/21/mac-glasses.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img class="shadow-2xl rounded-md w-[160px] h-[124px] lg:w-[300px] lg:h-[300px] object-cover"src="https://images.unsplash.com/21/mac-glasses.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img class="shadow-2xl rounded-md w-[160px] h-[124px] lg:w-[300px] lg:h-[300px] object-cover"src="https://images.unsplash.com/21/mac-glasses.JPG?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
             </div>
         </div>
+        <!-- section  review?? -->
+        <div class=" flex mx-4 my-10   bg ">
+            <div class="text-center mb-3 w-1/2 my-10 lg:my-44">
+                <h1 class="font-bold text-xl lg:text-5xl ">What They Say?</h1>
+            </div>
+                <img class="shadow-2xl rounded-md w-1/2" src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!-- blog -->
+        <!-- <div class="mx-4 my-10">
+            <div class="text-center mb-3">
+                <h1 class="font-bold text-2xl mb-2">Latest Blog</h1>
+                <p>est qui dolorem ipsum quia dolor sit amet,  
+                    consectetur, adipisci velit...</p>
+            </div>
+            <div class="flex gap-1 flex-row ">
+                <div class=" w-[194px] h-[203px]">
+                    <img class="" src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <div class="mt-5">
+                        <h1 class="text-xl font-bold">Kholid Wibu</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget pharetra, enim pharetra, augue </p>
+                    </div>
+                </div>
+                <div class=" w-[194px] h-[203px]">
+                    <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <div class="mt-5">
+                        <h1 class="text-xl font-bold">Kholid Wibu</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget pharetra, enim pharetra, augue </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </div>
+    <footer class="bg-purple-600 lg:p-14 p-10">
+            <div class="text-center">
+                <h1 class="text-2xl lg:text-4xl font-bold">Langganan Email</h1>
+                <p class="lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, odio.</p>
+                <input type="email" placeholder="Email Address" class="font-bold text-black p-2 mt-5 lg:w-[800px] lg:p-3">
+                <button class="bg-black p-2 text-white font-bold lg:h-22 lg:p-3">SEND</button>
+            </div>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle")
+        const list =  document.querySelector("nav ul")
+
+        menuToggle.addEventListener("click", function(){
+            list.classList.toggle("slide")
+        })
+    </script>
 </body>
 </html>
