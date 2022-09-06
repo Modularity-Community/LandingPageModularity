@@ -1,0 +1,35 @@
+/* humberger menu animation*/
+.menu-toggle span:nth-child(2){
+    transform-origin:0 0 ;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin:0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(0,0) ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(0,0) ;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle span{
+    transition: all .5s;
+}
+
+nav ul.slide{
+    transform: translateX(0);
+    opacity: 0.9;
+}
+
+.wraper{
+    display: flex;
+    overflow-x: auto;
+}
